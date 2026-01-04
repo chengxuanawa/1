@@ -1,0 +1,17 @@
+#!name=ChinaUnicomAds
+#!desc=中国联通客户端去广告（适配 Loon）
+#!author=ddgksf2013（规则来源）+ 转换
+#!system=ios
+#!homepage=https://github.com/ddgksf2013/Rewrite
+
+[URL Rewrite]
+^https?:\/\/m\.client\.10010\.com\/search_service\/search\/searchScrollWord reject
+^https?:\/\/m\.client\.10010\.com\/mobileserviceimportant\/customer\/querySmartServicekhd\.htm reject
+^https?:\/\/m\.client\.10010\.com\/clientIndex\/api\/v1\/index\/queryIndexExclusiveOffers reject
+^https?:\/\/img\.client\.10010\.com\/homejingxuan12\/js\/(pubuliu|1homeView) reject
+
+[Rule]
+DOMAIN-SUFFIX,ad.10010.com,REJECT
+
+[MITM]
+hostname = m.client.10010.com, img.client.10010.com
