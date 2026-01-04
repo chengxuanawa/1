@@ -1,0 +1,10 @@
+#!name=DraftsVIP
+#!desc=Drafts 会员解锁（Loon 插件版）
+#!author=ddgksf2013
+#!system=ios
+
+[Script]
+DraftsVIP = script-path=https://ddgksf2013.top/scripts/drafts.vip.js, requires-body=true, timeout=60
+
+[MITM]
+hostname = draftsapp.io
